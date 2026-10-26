@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Зелена кімната — рослини, що роблять дім живим</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,500&family=Manrope:wght@400;500;600;700&display=swap&subset=cyrillic" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M5 19c0-8 5-14 15-14 0 10-6 15-14 15"/><path d="M5 19 14 10"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></symbol>
+  <symbol id="i-bag" viewBox="0 0 24 24"><path d="M5 8h14l-1 12H6z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-8-5-8-11a4.5 4.5 0 0 1 8-2.5A4.5 4.5 0 0 1 20 9c0 6-8 11-8 11z"/></symbol>
+  <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.5 1.5M17.5 17.5 19 19M5 19l1.5-1.5M17.5 6.5 19 5"/></symbol>
+  <symbol id="i-truck" viewBox="0 0 24 24"><path d="M2 6h12v10H2zM14 10h4l3 3v3h-7"/><circle cx="7" cy="17" r="1.8"/><circle cx="17" cy="17" r="1.8"/></symbol>
+  <symbol id="i-spark" viewBox="0 0 24 24"><path d="M9 4v6M6 7h6M16 9l1.2 3.8L21 14l-3.8 1.2L16 19l-1.2-3.8L11 14l3.8-1.2z"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+</svg>
+
+<div class="top"><div class="wrap"><span>Безкоштовна доставка по Києву від 1 500 ₴</span><span>Рослини, що роблять дім живим</span></div></div>
+
+<header class="site">
+  <div class="wrap">
+    <a class="logo" href="#top"><i><svg class="ico"><use href="#i-leaf"/></svg></i>Зелена кімната</a>
+    <nav class="main" id="nav" aria-label="Головне меню">
+      <ul>
+        <li><a href="#catalog">Рослини</a></li>
+        <li><a href="#care">Догляд</a></li>
+        <li><a href="#about">Про нас</a></li>
+        <li><a href="#journal">Журнал</a></li>
+      </ul>
+    </nav>
+    <div class="tools">
+      <button id="searchBtn" aria-label="Пошук" aria-expanded="false"><svg class="ico"><use href="#i-search"/></svg></button>
+      <button id="cartBtn" aria-label="Кошик"><svg class="ico"><use href="#i-bag"/></svg><span class="badge" id="badge">0</span></button>
+      <button class="burger" id="burger" aria-label="Меню" aria-expanded="false"><svg class="ico"><use href="#i-menu"/></svg></button>
+    </div>
+  </div>
+  <div class="searchbar" id="searchbar"><div class="wrap"><input id="q" type="search" placeholder="Знайти рослину, наприклад «монстера»" aria-label="Пошук рослин"></div></div>
+</header>
+
+<main id="top">
+  <section class="wrap hero">
+    <div class="copy">
+      <div class="eyebrow"><svg class="ico"><use href="#i-spark"/></svg>Твоя домашня оранжерея</div>
+      <h1>Додайте дому <em>трохи життя</em></h1>
+      <p>Добираємо здорові рослини, надійно пакуємо та допомагаємо піклуватися про них щодня.</p>
+      <div class="cta">
+        <a class="btn" href="#catalog">Обрати рослину <svg class="ico"><use href="#i-arrow"/></svg></a>
+        <a class="link" href="#quiz">Підібрати за умовами</a>
+      </div>
+      <div class="stats">
+        <div><b>2 500+</b><span>щасливих рослин</span></div>
+        <div><b>4,9</b><span>оцінка покупців</span></div>
+        <div><b>30 днів</b><span>підтримки після покупки</span></div>
+      </div>
+    </div>
+    <div class="visual" id="heroVisual">
+      <img src="images/photo1.jpg" alt="Монстера в теракотовому горщику біля консолі з лампою" width="1200" height="1600" fetchpriority="high">
+      <span class="vtext">Вирощено з любов’ю</span>
+      <div class="tip"><i><svg class="ico"><use href="#i-sun"/></svg></i><div><b>Порада дня</b><span>Поверніть рослину до світла</span></div></div>
+    </div>
+  </section>
+
+  <section class="wrap sec" id="catalog">
+    <div class="sec-head">
+      <div><p class="kicker">Знайдіть свою</p><h2>Зелені улюбленці</h2></div>
+      <a class="all" href="#catalog">Увесь каталог <svg class="ico"><use href="#i-arrow"/></svg></a>
+    </div>
+    <div class="chips" id="chips" role="group" aria-label="Фільтр рослин">
+      <button class="chip" data-f="all" aria-pressed="true">Усі рослини</button>
+      <button class="chip" data-f="easy" aria-pressed="false">Невибагливі</button>
+      <button class="chip" data-f="shade" aria-pressed="false">Для тіні</button>
+      <button class="chip" data-f="big" aria-pressed="false">Великі</button>
+      <button class="chip" data-f="office" aria-pressed="false">Для офісу</button>
+    </div>
+    <div class="grid" id="grid"></div>
+  </section>
+
+  <section class="wrap" id="quiz">
+    <div class="quiz">
+      <div class="img"><img src="images/photo6.jpg" alt="Листя монстери біля вікна" width="1200" height="800" loading="lazy"></div>
+      <div class="txt">
+        <p class="kicker">Не знаєте, що обрати?</p>
+        <h2>Знайдемо рослину, якій сподобається у вас</h2>
+        <p>Відповідайте на 3 прості запитання про світло, простір і ваш ритм життя.</p>
+        <button class="btn lime" id="quizBtn">Пройти тест <svg class="ico"><use href="#i-arrow"/></svg></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap sec" id="about">
+    <p class="kicker">Про нас</p><h2>Рослини, з якими легко жити</h2>
+    <div class="cols">
+      <p>«Зелена кімната» починалася з простої ідеї: рослина має не просто стояти в горщику, а приживатися у вашому домі. Тому ми обираємо лише здорові екземпляри, придатні для кімнатних умов, і не пропонуємо те, у чому не впевнені самі.</p>
+      <p>Кожну рослину перед відправленням оглядає садівник: перевіряє листя, коріння й ґрунт. Ми надійно пакуємо її для дороги, а після покупки лишаємося на зв’язку: підкажемо, куди поставити, як поливати і що робити, якщо щось пішло не так.</p>
+    </div>
+  </section>
+
+  <section class="wrap sec" id="care">
+    <p class="kicker">Догляд</p><h2>Чотири правила щасливої рослини</h2>
+    <div class="cards c4">
+      <div class="box"><h3>Світло</h3><p>Більшість кімнатних рослин люблять яскраве розсіяне світло. Пряме полуденне сонце може обпекти листя, а в темному кутку рослина витягується й блякне.</p></div>
+      <div class="box"><h3>Полив</h3><p>Поливайте, коли верхній шар ґрунту підсохне на 3–5 см. Надлишок води шкодить більше за її нестачу, тому горщик має мати дренаж.</p></div>
+      <div class="box"><h3>Повітря</h3><p>Монстерам і калатеям до вподоби вологе повітря: протирайте листя вологою ганчіркою. Уникайте протягів і місць просто біля батарей.</p></div>
+      <div class="box"><h3>Підживлення</h3><p>З весни до осені підживлюйте рослини раз на 3–4 тижні комплексним добривом. Узимку, коли ріст сповільнюється, майже не підживлюйте.</p></div>
+    </div>
+  </section>
+
+  <section class="wrap feat">
+    <div><i><svg class="ico"><use href="#i-leaf"/></svg></i><h3>Здорові рослини</h3><p>Кожну оглядає наш садівник перед відправленням.</p></div>
+    <div><i><svg class="ico"><use href="#i-truck"/></svg></i><h3>Дбайлива доставка</h3><p>Надійне пакування та доставка у зручний час.</p></div>
+    <div><i><svg class="ico"><use href="#i-spark"/></svg></i><h3>Підтримка у догляді</h3><p>Особиста інструкція та поради після покупки.</p></div>
+  </section>
+<section class="wrap sec" id="journal">
+    <p class="kicker">Журнал</p><h2>Корисне про рослини</h2>
+    <div class="cards c3">
+      <article class="box"><h3>Як зрозуміти, що рослині потрібна вода</h3><p>Не орієнтуйтеся на розклад, перевіряйте ґрунт пальцем. Жовте листя й пліснява на ґрунті часто означають перелив, а сухі ламкі кінчики — що повітря надто сухе.</p></article>
+      <article class="box"><h3>Перші дні рослини вдома</h3><p>Нове місце — це стрес. Поставте рослину в світле місце без протягів, не пересаджуйте її одразу і не переставляйте щодня. Кілька пожовклих листків — нормальна адаптація.</p></article>
+      <article class="box"><h3>Рослини для тіні й для офісу</h3><p>Заміокулькас і сансев’єрія терплять слабке світло та рідкий полив, тому підходять для кабінетів і північних вікон. Якщо світла зовсім мало, додайте лампу для рослин.</p></article>
+    </div>
+  </section>
+
+  <section class="wrap sec faq" id="faq">
+    <p class="kicker">Питання й відповіді</p><h2>Перед замовленням</h2>
+    <details><summary>Як працює доставка?</summary><p>Доставка по Києву безкоштовна від 1 500 ₴. Для менших замовлень вартість і зручний час доставки ми уточнимо під час підтвердження.</p></details>
+    <details><summary>Що, якщо рослина не прижилася?</summary><p>Протягом 30 днів після покупки ми підтримуємо вас порадами. Якщо рослина приїхала пошкодженою, напишіть нам, і ми знайдемо рішення.</p></details>
+    <details><summary>Як ви пакуєте рослини?</summary><p>Рослину фіксуємо в горщику, листя обережно загортаємо, а коробку підбираємо за розміром, щоб у дорозі нічого не ламалося.</p></details>
+    <details><summary>Чи можна обрати рослину за умовами?</summary><p>Так, пройдіть тест на головній сторінці: три запитання про світло, час на догляд і розмір рослини.</p></details>
+  </section>
+</main>
+
+<footer><div class="wrap"><a class="logo" href="#top"><i><svg class="ico"><use href="#i-leaf"/></svg></i>Зелена кімната</a><span>Створюємо зелені куточки, в яких хочеться жити.</span><span>© 2025 Зелена кімната</span></div></footer>
+
+<div class="shade" id="shade"></div>
+<aside class="drawer" id="drawer" aria-label="Кошик" aria-hidden="true">
+  <div class="dh"><h3>Кошик</h3><button id="drawerClose" aria-label="Закрити"><svg class="ico"><use href="#i-x"/></svg></button></div>
+  <div class="db" id="cartList"></div>
+  <div class="df" id="cartFoot"></div>
+</aside>
+
+<dialog id="dlg"><button class="close" id="dlgClose" aria-label="Закрити"><svg class="ico"><use href="#i-x"/></svg></button><div id="dlgBody"></div></dialog>
+<div id="toast" role="status" aria-live="polite"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
